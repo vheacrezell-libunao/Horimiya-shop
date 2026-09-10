@@ -1,159 +1,346 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horimiya Shop</title>
+
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!----------Home---------->
-<h1>Horimiya</h1>
-<p>Time-lens Elegance</p>
+    <!-- ==================== HEADER ==================== -->
 
-<section>
-    <h2>Vhea Crezell E. Libunao</h2>
-    <p>Owner and CEO of Horimiya</p>
-    <img src="VHEA.jfif" alt="Vhea Crezell E. Libunao" width="300" height="200">
-</section>
+    <header>
+        <p class="eyebrow">ELEGANCE • STYLE • VISION</p>
 
-<!---------- Products ---------->
-<section>
+        <h1>Horimiya</h1>
 
-    <h2>Our Products</h2>
-
-    <p>
-        Explore our collection of stylish and comfortable eyewear.
-    </p>
+        <p class="tagline">Time-lens Elegance</p>
+    </header>
 
 
-    <!---------- Sunglass ---------->
-    <article>
+    <!-- ==================== NAVIGATION ==================== -->
 
-        <h3>Sunglass</h3>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
 
-        <p>₱500.00</p>
+            <li>
+                <a href="#products">Products</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- ==================== MAIN ==================== -->
+
+    <main>
+
+        <!-- ==================== OWNER ==================== -->
+
+        <section class="owner">
+
+            <div class="owner-text">
+
+                <p class="section-label">
+                    MEET THE OWNER
+                </p>
+
+                <h2>
+                    Vhea Crezell E. Libunao
+                </h2>
+
+                <p class="owner-role">
+                    Owner and CEO of Horimiya
+                </p>
+
+                <p>
+                    Welcome to Horimiya, where fashion meets
+                    everyday vision. We believe that the right
+                    eyewear can make every look more confident
+                    and stylish.
+                </p>
+
+            </div>
+
+            <div class="owner-image">
+                <img
+                    src="VHEA.jfif"
+                    alt="Vhea Crezell E. Libunao"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- ==================== PRODUCTS ==================== -->
+
+        <section id="products" class="products-section">
+
+            <p class="section-label center">
+                OUR COLLECTION
+            </p>
+
+            <h2 class="section-title">
+                Our Products
+            </h2>
+
+            <p class="section-description">
+                Explore our collection of stylish and comfortable
+                eyewear made for different styles and occasions.
+            </p>
+
+
+            <div class="product-grid">
+
+
+                <!-- ==================== SUNGLASS ==================== -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Resin round.jfif"
+                            alt="Sunglass"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-type">
+                            01 • SUNGLASS
+                        </p>
+
+                        <h3>Sunglass</h3>
+
+                        <p class="price">
+                            ₱500.00
+                        </p>
+
+                        <p class="description">
+                            Anti rad sunglasses designed for
+                            stylish everyday protection.
+                        </p>
+
+                        <a
+                            class="details-button"
+                            href="products/sunglass.html"
+                        >
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ==================== READING GLASS ==================== -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Zoom.jfif"
+                            alt="Reading glass"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-type">
+                            02 • READING GLASS
+                        </p>
+
+                        <h3>Reading Glass</h3>
+
+                        <p class="price">
+                            ₱200.00
+                        </p>
+
+                        <p class="description">
+                            A comfortable thick frame perfect
+                            for reading and everyday use.
+                        </p>
+
+                        <a
+                            class="details-button"
+                            href="products/reading-glass.html"
+                        >
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ==================== BEACH GLASS ==================== -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="blue water.jfif"
+                            alt="Beach glass"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-type">
+                            03 • BEACH GLASS
+                        </p>
+
+                        <h3>Beach Glass</h3>
+
+                        <p class="price">
+                            ₱500.00
+                        </p>
+
+                        <p class="description">
+                            Anti rad sunglasses perfect for
+                            sunny beach days and outdoor adventures.
+                        </p>
+
+                        <a
+                            class="details-button"
+                            href="products/beach-glass.html"
+                        >
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section id="about" class="about-section">
+
+            <p class="section-label">
+                OUR STORY
+            </p>
+
+            <h2>About Horimiya</h2>
+
+            <p>
+                Horimiya is a shop that sells a variety of
+                stylish and high-quality sunglasses. Our products
+                are designed to provide both fashion and function,
+                helping customers look great while protecting
+                their eyes from harmful UV rays.
+            </p>
+
+            <p>
+                We pride ourselves on offering a wide range of
+                styles to suit different tastes, from classic
+                designs to trendy frames. Our commitment to
+                quality and customer satisfaction is what makes
+                Horimiya special.
+            </p>
+
+            <p>
+                At Horimiya, we believe that eyewear is more than
+                just an accessory. It can be a statement of
+                personal style. Our goal is to make every shopping
+                experience enjoyable, simple, and memorable.
+            </p>
+
+        </section>
+
+
+        <!-- ==================== CONTACT ==================== -->
+
+        <section
+            class="contact-section"
+            id="contact"
+        >
+
+            <p class="section-label center">
+                GET IN TOUCH
+            </p>
+
+            <h2>Contact Us</h2>
+
+            <p class="contact-intro">
+                We'd love to hear from you.
+            </p>
+
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <span>✉</span>
+
+                    <div>
+                        <strong>Email</strong>
+                        <p>horimiyashop@gmail.com</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>☎</span>
+
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+63 9911178714</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>⌖</span>
+
+                    <div>
+                        <strong>Location</strong>
+                        <p>Manila, Philippines</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <h2>Horimiya</h2>
 
         <p>
-            Anti rad sunglasses
+            Time-lens Elegance
         </p>
 
-        <img src="Resin round.jfif"
-             alt="Sunglass"
-             width="300"
-             height="200">
-
-        <p>
-            <a href="products/sunglass.html">View details</a>
+        <p class="copyright">
+            © 2026 Horimiya Shop. All rights reserved.
         </p>
 
-    </article>
-
-
-    <!---------- Reading Glass ---------->
-    <article>
-
-        <h3>Reading Glass</h3>
-
-        <p>₱200.00</p>
-
-        <p>
-            Thick frame
-        </p>
-
-        <img src="Zoom.jfif"
-             alt="Reading glass"
-             width="300"
-             height="200">
-
-        <p>
-            <a href="products/reading-glass.html">View details</a>
-        </p>
-
-    </article>
-
-
-    <!---------- Beach Glass ---------->
-    <article>
-
-        <h3>Beach Glass</h3>
-
-        <p>₱500.00</p>
-
-        <p>
-            Anti rad sunglasses
-        </p>
-
-        <img src="blue water.jfif"
-             alt="Beach glass"
-             width="300"
-             height="200">
-
-        <p>
-            <a href="products/beach-glass.html">View details</a>
-        </p>
-
-    </article>
-
-</section>
-
-<!---------Contact--------->
- <h2>About Horimiya</h2>
-
- <article>
-         
-         <p>
-              Horimiya is a shop that sells a variety of stylish and high-quality sunglasses. Our products are designed to provide both fashion and function, ensuring that our customers look great while protecting their eyes from harmful UV rays. 
-              We pride ourselves on offering a wide range of styles to suit every taste, from classic aviators to trendy oversized frames. Our commitment to quality and customer satisfaction is what sets us apart in the eyewear industry.
-         </p>
-
-          <p>
-                At Horimiya, we believe that sunglasses are not just an accessory, but a statement of personal style. 
-                Our team is dedicated to curating the latest trends and providing exceptional customer service to ensure that every shopping experience is enjoyable and memorable. 
-                Whether you're looking for a pair of sunglasses for everyday wear or a special occasion, Horimiya has something for everyone.
-          </p>
-            
-         </section>
-
-
-     </main>
-
-      <footer>
-          <p>&copy; 2026 Horimiya Shop. All rights reserved.</p>
-      </footer>
+    </footer>
 
 </body>
-</html> 
-
-
- <!---------Contact---------->
- <section class="contact" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-    We'd love to hear from you.
-</p>
-
-<div class="contact-info">
-
-    <p>
-        <i class="fa-solid fa-envelope"></i>
-        horimiyashop@gmail.com
-    </p>
-
-    <p>
-        <i class="fa-solid fa-phone"></i>
-        +63 9911178714
-    </p>
-
-    <p>
-        <i class="fa-solid fa-location-dot"></i>
-        Manila, Philippines
-    </p>
-
-</div>
-
-</section>
-
-      
+</html>
+```

@@ -1,0 +1,765 @@
+```css
+/* =====================================================
+   1. VARIABLES
+   ===================================================== */
+
+:root {
+    --brand-color: #8b5cf6;
+    --dark-ink: #241b35;
+    --muted-grey: #746d80;
+    --light-background: #faf7ff;
+
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --blue: #38bdf8;
+    --yellow: #facc15;
+    --white: #ffffff;
+
+    --border-color: #eadff7;
+
+    --card-shadow: 0 15px 35px rgba(71, 45, 105, 0.12);
+    --soft-shadow: 0 8px 20px rgba(71, 45, 105, 0.08);
+
+    --large-radius: 28px;
+    --medium-radius: 18px;
+}
+
+
+/* =====================================================
+   2. BASE STYLES
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    line-height: 1.6;
+
+    color: var(--dark-ink);
+
+    background-color: var(--light-background);
+}
+
+
+/* =====================================================
+   3. HEADER
+   ===================================================== */
+
+header {
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--white);
+
+    padding: 85px 20px 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--brand-color),
+            var(--pink),
+            var(--blue)
+        );
+
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+
+    box-shadow: var(--card-shadow);
+}
+
+
+/* Decorative circle */
+
+header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.12);
+
+    top: -140px;
+    left: -70px;
+}
+
+header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background-color: rgba(250, 204, 21, 0.15);
+
+    right: -100px;
+    bottom: -170px;
+}
+
+.eyebrow {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 12px;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: clamp(3rem, 8vw, 6rem);
+
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        3px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.tagline {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 20px;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 4px;
+}
+
+
+/* =====================================================
+   4. NAVIGATION
+   ===================================================== */
+
+nav {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    padding: 14px;
+
+    text-align: center;
+
+    background-color: var(--white);
+
+    box-shadow:
+        0 5px 20px rgba(71, 45, 105, 0.08);
+}
+
+nav ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+
+    margin: 4px 6px;
+}
+
+nav a {
+    display: inline-block;
+
+    padding: 9px 20px;
+
+    color: var(--dark-ink);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--white);
+
+    background-color: var(--brand-color);
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   5. MAIN
+   ===================================================== */
+
+main {
+    width: min(1100px, 92%);
+
+    margin: 55px auto;
+}
+
+
+/* =====================================================
+   6. OWNER SECTION
+   ===================================================== */
+
+.owner {
+    display: grid;
+
+    grid-template-columns: 1fr 350px;
+
+    gap: 45px;
+
+    align-items: center;
+
+    padding: 45px;
+
+    margin-bottom: 60px;
+
+    background-color: var(--white);
+
+    border-radius: var(--large-radius);
+
+    box-shadow: var(--card-shadow);
+}
+
+.section-label {
+    margin: 0 0 8px;
+
+    color: var(--pink);
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.owner h2 {
+    margin: 5px 0;
+
+    color: var(--brand-color);
+
+    font-size: 2.4rem;
+}
+
+.owner-role {
+    color: var(--pink) !important;
+
+    font-weight: bold;
+}
+
+.owner-text p {
+    color: var(--muted-grey);
+}
+
+.owner-image img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: var(--large-radius);
+
+    box-shadow: var(--soft-shadow);
+}
+
+
+/* =====================================================
+   7. PRODUCTS SECTION
+   ===================================================== */
+
+.products-section {
+    padding: 10px 0 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.section-title {
+    margin: 5px 0;
+
+    text-align: center;
+
+    color: var(--dark-ink);
+
+    font-size: 3rem;
+}
+
+.section-description {
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    color: var(--muted-grey);
+}
+
+
+/* =====================================================
+   8. PRODUCT CARDS
+   ===================================================== */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    overflow: hidden;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--large-radius);
+
+    box-shadow: var(--card-shadow);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 22px 45px rgba(71, 45, 105, 0.18);
+}
+
+
+/* =====================================================
+   9. PRODUCT IMAGES
+   ===================================================== */
+
+.product-image {
+    overflow: hidden;
+
+    height: 250px;
+
+    background-color: #f3eaff;
+}
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   10. PRODUCT INFORMATION
+   ===================================================== */
+
+.product-info {
+    padding: 25px;
+}
+
+.product-type {
+    margin: 0;
+
+    color: var(--pink);
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.product-info h3 {
+    margin: 5px 0;
+
+    color: var(--dark-ink);
+
+    font-size: 1.7rem;
+}
+
+.price {
+    margin: 8px 0;
+
+    color: var(--brand-color) !important;
+
+    font-size: 1.3rem;
+
+    font-weight: bold;
+}
+
+.description {
+    min-height: 75px;
+
+    color: var(--muted-grey);
+}
+
+
+/* =====================================================
+   11. VIEW DETAILS BUTTON
+   ===================================================== */
+
+.details-button {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 11px 18px;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--brand-color),
+            var(--pink)
+        );
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 25px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.details-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(139, 92, 246, 0.3);
+}
+
+
+/* =====================================================
+   12. ABOUT SECTION
+   ===================================================== */
+
+.about-section {
+    padding: 45px;
+
+    margin-top: 40px;
+
+    background-color: var(--white);
+
+    border-radius: var(--large-radius);
+
+    border-left: 7px solid var(--pink);
+
+    box-shadow: var(--card-shadow);
+}
+
+.about-section h2 {
+    margin-top: 5px;
+
+    color: var(--brand-color);
+
+    font-size: 2.5rem;
+}
+
+.about-section p {
+    color: var(--muted-grey);
+}
+
+
+/* =====================================================
+   13. CONTACT SECTION
+   ===================================================== */
+
+.contact-section {
+    margin-top: 50px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--dark-ink),
+            var(--brand-color),
+            var(--pink)
+        );
+
+    border-radius: var(--large-radius);
+
+    box-shadow: var(--card-shadow);
+}
+
+.contact-section .section-label {
+    color: var(--yellow);
+}
+
+.contact-section h2 {
+    margin: 5px 0;
+
+    color: var(--white);
+
+    font-size: 2.5rem;
+}
+
+.contact-intro {
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   14. CONTACT INFORMATION
+   ===================================================== */
+
+.contact-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    text-align: left;
+
+    background-color:
+        rgba(255, 255, 255, 0.12);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.2);
+
+    border-radius: var(--medium-radius);
+}
+
+.contact-item span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    color: var(--dark-ink);
+
+    background-color: var(--yellow);
+
+    border-radius: 50%;
+
+    font-size: 1.3rem;
+}
+
+.contact-item strong {
+    font-size: 0.85rem;
+}
+
+.contact-item p {
+    margin: 2px 0 0;
+
+    font-size: 0.85rem;
+
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   15. FOOTER
+   ===================================================== */
+
+footer {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background-color: var(--dark-ink);
+}
+
+footer h2 {
+    margin: 0;
+
+    color: var(--white);
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer .copyright {
+    margin-top: 20px;
+
+    color: var(--blue);
+
+    font-size: 0.8rem;
+}
+
+
+/* =====================================================
+   16. RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 850px) {
+
+    .owner {
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+    }
+
+    .owner-image img {
+        height: 350px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   17. MOBILE DESIGN
+   ===================================================== */
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 60px 15px 75px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .eyebrow {
+        letter-spacing: 2px;
+    }
+
+    nav li {
+        display: inline-block;
+
+        margin: 2px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+
+        font-size: 0.8rem;
+    }
+
+    main {
+        width: 94%;
+
+        margin: 35px auto;
+    }
+
+    .owner {
+        padding: 22px;
+
+        border-radius: 22px;
+    }
+
+    .owner h2 {
+        font-size: 1.9rem;
+    }
+
+    .owner-image img {
+        height: 260px;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 25px;
+
+        border-radius: 22px;
+    }
+
+    .product-card {
+        border-radius: 22px;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+}
+```
