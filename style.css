@@ -1,10 +1,11 @@
-```css
 /* =====================================================
    1. VARIABLES
    ===================================================== */
 
 :root {
     --brand-color: #8b5cf6;
+    --brand: #8b5cf6;
+
     --dark-ink: #241b35;
     --muted-grey: #746d80;
     --light-background: #faf7ff;
@@ -352,9 +353,15 @@ main {
 
     background-color: var(--white);
 
+    padding: 16px;
+
     border: 1px solid var(--border-color);
 
+    border-left: 6px solid var(--brand);
+
     border-radius: var(--large-radius);
+
+    margin-bottom: 25px;
 
     box-shadow: var(--card-shadow);
 
@@ -381,6 +388,8 @@ main {
     height: 250px;
 
     background-color: #f3eaff;
+
+    border-radius: 20px;
 }
 
 .product-image img {
@@ -627,7 +636,129 @@ main {
 
 
 /* =====================================================
-   15. FOOTER
+   15. CONTACT FORM
+   ===================================================== */
+
+.contact-form {
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    text-align: left;
+}
+
+.contact-form fieldset {
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: var(--medium-radius);
+
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.contact-form legend {
+    padding: 0 10px;
+
+    color: var(--yellow);
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+}
+
+.contact-form label {
+    display: block;
+
+    margin: 15px 0 6px;
+
+    color: var(--white);
+
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    color: var(--dark-ink);
+
+    background-color: var(--white);
+
+    border: 2px solid transparent;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* Visible keyboard focus state */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 3px solid var(--brand);
+
+    outline-offset: 2px;
+}
+
+
+/* Submit button */
+
+.contact-form button {
+    margin-top: 20px;
+
+    padding: 12px 24px;
+
+    color: var(--white);
+
+    background-color: var(--brand);
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--pink);
+
+    transform: translateY(-2px);
+}
+
+
+/* Keyboard focus for button */
+
+.contact-form button:focus {
+    outline: 3px solid var(--yellow);
+
+    outline-offset: 2px;
+}
+
+
+/* =====================================================
+   16. FOOTER
    ===================================================== */
 
 footer {
@@ -660,7 +791,7 @@ footer .copyright {
 
 
 /* =====================================================
-   16. RESPONSIVE DESIGN
+   17. RESPONSIVE DESIGN
    ===================================================== */
 
 @media (max-width: 850px) {
@@ -690,7 +821,7 @@ footer .copyright {
 
 
 /* =====================================================
-   17. MOBILE DESIGN
+   18. MOBILE DESIGN
    ===================================================== */
 
 @media (max-width: 500px) {
@@ -752,6 +883,8 @@ footer .copyright {
 
     .product-card {
         border-radius: 22px;
+
+        padding: 16px;
     }
 
     .product-image {
@@ -761,5 +894,8 @@ footer .copyright {
     .contact-item {
         align-items: flex-start;
     }
+
+    .contact-form fieldset {
+        padding: 18px;
+    }
 }
-```
