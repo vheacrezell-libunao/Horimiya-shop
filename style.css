@@ -678,7 +678,8 @@ main {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
 
     padding: 12px 14px;
@@ -706,7 +707,8 @@ main {
 /* Visible keyboard focus state */
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
     outline: 3px solid var(--brand);
 
     outline-offset: 2px;

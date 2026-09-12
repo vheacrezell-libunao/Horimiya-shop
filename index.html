@@ -336,6 +336,9 @@
 
                     <legend>Send Us a Message</legend>
 
+
+                    <!-- Name -->
+
                     <label for="name">
                         Name
                     </label>
@@ -348,6 +351,8 @@
                         required
                     >
 
+
+                    <!-- Email -->
 
                     <label for="email">
                         Email
@@ -362,6 +367,41 @@
                     >
 
 
+                    <!-- Subject -->
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <select
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+                        <option value="">
+                            Choose a subject
+                        </option>
+
+                        <option value="suggest-place">
+                            Suggest a place
+                        </option>
+
+                        <option value="correct-detail">
+                            Correct a detail
+                        </option>
+
+                        <option value="ask-question">
+                            Ask a question
+                        </option>
+
+                        <option value="something-else">
+                            Something else
+                        </option>
+                    </select>
+
+
+                    <!-- Message -->
+
                     <label for="message">
                         Message
                     </label>
@@ -374,6 +414,8 @@
                         required
                     ></textarea>
 
+
+                    <!-- Send Button -->
 
                     <button type="submit">
                         Send Message
